@@ -7,7 +7,7 @@ python:
     - "3.4"
 sudo: false
 before_install:
-    - pip install codedev
+    - pip install codecov
 script:
     - coverage run setup.py test
 afert_success:
