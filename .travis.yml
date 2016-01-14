@@ -11,7 +11,7 @@ before_install:
     - pip install codecov
 script:
     - coverage run setup.py test
-afert_success:
+after_success:
     - codecov
 notifications:
     email: false
