@@ -4,4 +4,4 @@
 # Copyright (c) 2016 Ritashugisha
 # MIT License. <http://opensource.org/licenses/MIT>
 
-from . import common
+from .suite import TestSuite
