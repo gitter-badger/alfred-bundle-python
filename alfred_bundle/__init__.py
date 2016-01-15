@@ -6,5 +6,5 @@
 
 from . import tests
 from . import exceptions
-from .alfred import Alfred
-from .workflow import Workflow
+# from .alfred import Alfred
+# from .workflow import Workflow

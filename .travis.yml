@@ -6,7 +6,7 @@ python:
     - "3.3"
     - "3.4"
     - "3.5-dev"
-sudo: true
+sudo: false
 before_install:
     - pip install codecov
 script:
