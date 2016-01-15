@@ -19,19 +19,24 @@ class Alfred(object):
     """ Alfred interaction and information class.
 
     """
-    _name = glbl.ALFRED_NAME
-    _id = glbl.ALFRED_ID
-    _license = glbl.ALFRED_LICENSE_PATH
-    _usage = glbl.ALFRED_USAGE_PATH
-    _support = glbl.ALFRED_SUPPORT_DIR
-    _cache = glbl.ALFRED_CACHE_DIR
-    _workflow_data = glbl.ALFRED_WORKFLOW_DIR
-    _workflow_cache = glbl.ALFRED_WORKFLOW_CACHE_DIR
-    _databases = [
-        os.path.join(glbl.ALFRED_DATABASE_DIR, i)
-        for i in os.listdir(glbl.ALFRED_DATABASE_DIR)
-    ] + [glbl.ALFRED_SNIPPETS_DATABASE_PATH, glbl.ALFRED_CACHE_DATABASE_PATH]
-    _preferences = glbl.ALFRED_PREFS_PATH
+
+    def __init__(self):
+        self._name = glbl.ALFRED_NAME
+        self._id = glbl.ALFRED_ID
+        self._license = glbl.ALFRED_LICENSE_PATH
+        self._usage = glbl.ALFRED_USAGE_PATH
+        self._support = glbl.ALFRED_SUPPORT_DIR
+        self._cache = glbl.ALFRED_CACHE_DIR
+        self._workflow_data = glbl.ALFRED_WORKFLOW_DIR
+        self._workflow_cache = glbl.ALFRED_WORKFLOW_CACHE_DIR
+        self._databases = [
+            os.path.join(glbl.ALFRED_DATABASE_DIR, i)
+            for i in os.listdir(glbl.ALFRED_DATABASE_DIR)
+        ] + [
+            glbl.ALFRED_SNIPPETS_DATABASE_PATH,
+            glbl.ALFRED_CACHE_DATABASE_PATH
+        ]
+        self._preferences = glbl.ALFRED_PREFS_PATH
 
     @property
     def name(self):
