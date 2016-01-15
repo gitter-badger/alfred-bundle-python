@@ -4,4 +4,7 @@
 # Copyright (c) 2016 Ritashugisha
 # MIT License. <http://opensource.org/licenses/MIT>
 
-import tests
+from . import tests
+from . import exceptions
+from .alfred import Alfred
+from .workflow import Workflow

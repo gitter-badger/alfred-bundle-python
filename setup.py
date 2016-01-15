@@ -26,6 +26,6 @@ if __name__ == '__main__':
         ],
         package_data={},
         classifiers=[],
-        test_suite='alfred_bundle.tests.common',
+        test_suite='alfred_bundle.tests.suite',
         use_2to3=True
     )
